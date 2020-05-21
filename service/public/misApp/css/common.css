@@ -1,0 +1,33 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
+a { outline: none; text-decoration: none;color:#000; }
+html { font-size: 12px;}
+a:hover { text-decoration: none; }
+li { list-style: none; }
+input { border: none; outline: none; }
+em, i, strong { font-style: normal; font-weight: normal; }
+
+
+table{
+    border: 1px solid #ebeef5;
+    
+}
+table tr{
+    line-height: 30px;
+    
+}
+table th,td{
+    border-bottom: 1px solid #ebeef5;
+    border-left: 1px solid #ebeef5;
+}
+/* table tr:nth-child(even){
+    background:#fafafa;
+} */
+table tr:hover{
+    background:#ced7e6;
+}
+.D_I_B{
+    display: inline-block;
+}
+.B{
+    border:1px #ccc solid;
+}

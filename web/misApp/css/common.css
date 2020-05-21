@@ -1,0 +1,116 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
+a { outline: none; text-decoration: none;color:#000; }
+html { font-size: 12px;}
+a:hover { text-decoration: none; }
+li { list-style: none; }
+input { border: none; outline: none; }
+em, i, strong { font-style: normal; font-weight: normal; }
+
+.BgButton{
+    display: inline-block;
+    width: 80px;
+    line-height: 34px;
+    background-color: #4677c4;
+    color: #fff;
+    border-radius: 10%;
+    text-align: center;
+}
+/* 右浮动 */
+.floatRight{
+    float: right;
+}
+.redColor{
+    color: red;
+}
+/* 与上下左右的距离*/
+/* 上下左右各10px */
+.all_ten{
+    margin: 10px;
+}
+/* 底部 */
+.MB_twenty{
+    margin-bottom: 20px!important;
+}
+.MB_ten{
+    margin-bottom: 10px!important;
+}
+.MB_Thirty{
+    margin-bottom: 30px!important;
+}
+.PB_Thirty{
+    padding-bottom: 30px!important;
+}
+.PB_twenty{
+    padding-bottom: 20px!important;
+}
+.PB_ten{
+    padding-bottom: 10px!important;
+}
+/* 顶部 */
+.MT_twenty{
+    margin-top: 20px!important;
+}
+.MT_ten{
+    margin-top: 10px!important;
+}
+.MT_Thirty{
+    margin-top: 30px!important;
+}
+.PT_Thirty{
+    padding-top: 30px!important;
+}
+.PT_twenty{
+    padding-top: 20px!important;
+}
+.PT_ten{
+    padding-top: 10px!important;
+}
+/* 左边 */
+.ML_twenty{
+    margin-left: 20px!important;
+}
+.ML_Thitty{
+    margin-left: 30px;
+}
+.ML_Four{
+    margin-left: 40px!important;
+}
+.ML_ten{
+    margin-left: 10px!important;
+}
+.PL_twenty{
+    padding-left: 20px!important;
+}
+.PL_ten{
+    padding-left: 10px!important;
+}
+table{
+    border: 1px solid #ebeef5;
+    
+}
+table tr{
+    line-height: 30px;
+    
+}
+/* table th,td{
+    border-bottom: 1px solid #ebeef5;
+    border-left: 1px solid #ebeef5;
+} */
+/* table tr:nth-child(even){
+    background:#fafafa;
+} */
+/* table tr:hover{
+    background:#ced7e6;
+} */
+.D_I_B{
+    display: inline-block;
+}
+.B{
+    border:1px #ccc solid;
+}
+.T_A_C{
+    text-align: center;
+}
+.M_T_10{
+    margin-top: 10px;
+}

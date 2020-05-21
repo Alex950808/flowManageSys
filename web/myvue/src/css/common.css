@@ -1,0 +1,1030 @@
+@font-face {
+    font-family: 'iconfont';  
+    src: url('//at.alicdn.com/t/font_730910_pvv7mtoig7j.eot');
+    src: url('//at.alicdn.com/t/font_730910_pvv7mtoig7j.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_730910_pvv7mtoig7j.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_730910_pvv7mtoig7j.woff') format('woff'),
+    url('//at.alicdn.com/t/font_730910_pvv7mtoig7j.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_730910_pvv7mtoig7j.svg#iconfont') format('svg');
+  }
+/* @font-face {
+    font-family: fanti;
+    src: url('../../font/苹方黑体-中粗-繁.ttf');
+} */
+
+/* loading的背景颜色 */
+.el-loading-mask {
+    background-color: rgba(255,255,255,.6);
+}
+li{
+    list-style: none;
+}
+/* div#ebeef5背景颜色 */
+.Lavender{
+    background-color: #ebeef5;
+}
+/* 所有分页样式 */
+.tablePage{
+    text-align: right;
+    height: 60px;
+    margin-top: 30px;
+}
+/* 弹出框确认按钮 */
+.el-button--primary {
+    color: #fff !important;
+    background-color: #ff5d17 !important;
+    border-color: #ff5d17 !important;
+    width: 110px;
+    height: 35px !important;
+    line-height: 10px !important;
+}
+.el-button--info {
+    color: #fff !important;
+    background-color: #f2f2f2 !important;
+    border-color: #f2f2f2 !important;
+    width: 110px !important;
+    height: 35px;
+    line-height: 10px !important;
+    color: #262727 !important;
+    border: 1px solid #ccc !important;
+}
+/* 弹出框header */
+.el-dialog__header {
+    padding: 0px 20px 0px !important;
+    text-align: left;
+    background-color: #eef0f4;
+    height: 70px !important;
+}
+/* 弹出框每行高宽等杂项设置 */
+.elRow{
+    height: 65px;
+    line-height: 65px;
+}
+.el-dialog__title{
+    line-height: 70px !important;
+}
+/* 页面标题前的竖条 */
+.coarseLine{
+    display: inline-block;
+    width:5px;
+    height: 20px;
+    vertical-align: -3px;
+    background: #113d62;
+}
+/* 没有数据时页面样式 */
+.notData{
+    margin-bottom: 110px;
+    margin-top: 110px;
+    height: 400px;
+    width: 364px;
+}
+/* 以下统一修改所有input样式 */
+/* 谷歌 */
+input::-webkit-input-placeholder { /* WebKit browsers */ 
+    color: #cdcdcd;
+}
+/* firefox火狐浏览器 */
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: red;
+
+font-size:15px;
+} 
+/* IE浏览器 */
+input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: red;
+
+font-size:15px;
+}
+.inputStyle{
+    width: 243px !important;
+    height: 38px !important;
+    outline: none;
+    border-radius: 3px !important;
+    padding-left: 30px !important;
+    margin-left: 16px;
+    background-color: #ebeef5 !important;
+    border: 1px solid #ccc !important;
+}
+/* 超过两行隐藏 */
+.overTwoLinesHeid{
+    text-overflow: ellipsis;
+    /* display: -webkit-box; */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+/* 超过一行隐藏 没有span*/
+.overoneLinesHeid{
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+/* 超过三行隐藏 */
+.overthreeLinesHeid{
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+/* 一行内隐藏 */
+.overOneLinesHeid span{
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    height: 40px;
+}
+/* 列表页title样式 */
+.listTitleStyle{
+    width: 100% !important;
+    height: 55px !important;
+    line-height: 55px !important;
+    /* margin-top: 20px !important; */
+    font-size: 18px !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    position: relative !important;
+    padding-left: 0 !important;
+    margin-bottom: 0px !important;
+    background-color: #fff !important;
+}
+/* 表格页title样式 */
+.tableTitleStyle{
+    height: 75px;
+    background-color: #ebeef5 !important;
+    line-height: 75px !important;
+    font-size: 18px !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    padding-left: 35px !important;
+    margin-top: 20px !important;
+}
+/* 页面背景颜色 */
+.bgDiv{
+    height: 800px;
+    background-color: #fff;
+}
+/* 带背景颜色的按钮 */
+.bgButton{
+    height: 31px !important;
+    background-color: #4677c4 !important;
+    font-size: 14px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    display: inline-block !important;
+    color: #fff !important;
+    line-height: 31px !important;
+    text-align: center !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+/* 带橙色背景颜色的按钮 */
+.orangeButton{
+    height: 31px !important;
+    /* background-color: #f1861e !important; */
+    background: -webkit-gradient(linear, 100% 0, 0 100%, from(#fd7512), to(#f2871f));
+    font-size: 14px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    display: inline-block !important;
+    color: #fff !important;
+    line-height: 31px !important;
+    text-align: center !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+/* 灰色带背景颜色的按钮 */
+.grBgButton{
+    height: 31px !important;
+    background-color: #909399 !important;
+    font-size: 14px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    display: inline-block !important;
+    color: #fff !important;
+    line-height: 31px !important;
+    text-align: center !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+/* 灰色带背景颜色的按钮 */
+.infoBgButton{
+    height: 31px !important;
+    background-color: #909399 !important;
+    font-size: 14px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    display: inline-block !important;
+    color: #fff !important;
+    line-height: 31px !important;
+    text-align: center !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+/* 所有不带背景颜色的按钮样式 */
+.notBgButton{
+    height: 40px !important;
+    font-size: 16px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    display: inline-block !important;
+    color: #4677c4 !important;
+    line-height: 40px !important;
+    text-align: center !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    font-weight: normal !important;
+}
+/* 灰色不带背景颜色的按钮样式 */
+.infoNotBgButton{
+    height: 40px !important;
+    font-size: 16px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    display: inline-block !important;
+    color: #909399 !important;
+    line-height: 40px !important;
+    text-align: center !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    font-weight: normal !important;
+}
+/* 红色背景按钮 */
+.redBgButton{
+    color: #fff !important;
+    background-color: #ff5d17 !important;
+    border-color: #ff5d17 !important;
+    width: 110px !important;
+    height: 35px !important;
+    line-height: 35px !important;
+    display: inline-block !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    border-radius: 5px !important;
+    border:1px solid red;
+}
+/* 灰色背景按钮 */
+.grayBgButton{
+    color: #000 !important;
+    background-color: #f2f2f2 !important;
+    width: 110px !important;
+    height: 35px !important;
+    line-height: 35px !important;
+    display: inline-block !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    border-radius: 5px !important;
+    border:1px solid #ccc;
+}
+/* 所有上传图标样式 */
+.upDataIcon{
+    font-size: 27px !important;
+    color: #4677c4 !important;
+    cursor: pointer;
+}
+/* 向上对齐-5 */
+.verticalAlign{
+    vertical-align: -5px !important;
+}
+/* 行高30 */
+.lineHeightThirty{
+    height: 30px;
+    line-height: 30px;
+}
+/* 行高四十 */
+.lineHeightForty{
+    height: 40px;
+    line-height: 40px;
+}
+/* 行高50 */
+.L_H_F{
+    height: 50px;
+    line-height: 50px;
+}
+/* 行高六十 */
+.lineHeightSixty{
+    height: 60px;
+    line-height: 60px;
+}
+/* 行高八十 */
+.lineHeighteighty{
+    height: 80px;
+    line-height: 80px;
+}
+/* 行高90 */
+.lineHeightNinety{
+    height: 90px;
+    line-height: 90px;
+}
+/* 行高20 */
+.L_H_T{
+    height: 20px;
+    line-height: 20px;
+}
+/* 文字居中 */
+.fontCenter{
+    text-align: center;
+}
+/* 文字居左 */
+.fontLift{
+    text-align: left !important;
+}
+/* 文字居右 */
+.fontRight{
+    text-align: right!important;
+}
+/* 字体加粗 */
+.fontWeight{
+    font-weight: bold;
+}
+/* 字体不加粗 */
+.F_N{
+    font-weight: normal;
+}
+/* 字体14px  正常字体 */
+.F_Z_N{
+    font-size: 14px;
+}
+.F_S_Sixteen{
+    font-size: 16px !important;
+}
+.F_S_T{
+    font-size: 18px !important;
+}
+.F_S_twenty{
+    font-size: 20px !important;
+}
+.F_S_24{
+    font-size: 24px;
+}
+.F_S_0{
+    font-size: 0px;
+}
+/* 鼠标手势 */
+.Cursor{
+    cursor: pointer;
+}
+/* 左浮动 */
+.floatLift{
+    float: left;
+}
+/* 右浮动 */
+.floatRight{
+    float: right;
+}
+/* 与上下左右的距离*/
+/* 底部 */
+.MB_twenty{
+    margin-bottom: 20px!important;
+}
+.MB_ten{
+    margin-bottom: 10px!important;
+}
+.MB_Thirty{
+    margin-bottom: 30px!important;
+}
+.PB_Thirty{
+    padding-bottom: 30px!important;
+}
+.PB_twenty{
+    padding-bottom: 20px!important;
+}
+.PB_ten{
+    padding-bottom: 10px!important;
+}
+/* 顶部 */
+.MT_twenty{
+    margin-top: 20px!important;
+}
+.MT_ten{
+    margin-top: 10px!important;
+}
+.MT_Thirty{
+    margin-top: 30px!important;
+}
+.PT_Thirty{
+    padding-top: 30px!important;
+}
+.PT_twenty{
+    padding-top: 20px!important;
+}
+.PT_ten{
+    padding-top: 10px!important;
+}
+/* 左边 */
+.ML_twenty{
+    margin-left: 20px!important;
+}
+.ML_Thitty{
+    margin-left: 30px;
+}
+.ML_Four{
+    margin-left: 40px!important;
+}
+.ML_ten{
+    margin-left: 10px!important;
+}
+.PL_twenty{
+    padding-left: 20px!important;
+}
+.PL_ten{
+    padding-left: 10px!important;
+}
+/* 居左200 */
+.PL_T_H{
+    padding-left: 200px!important;
+}
+/* 距左边5% */
+.ML_F_R{
+    margin-left: 5%;
+}
+/* 右边 */
+.MR_twenty{
+    margin-right: 20px!important;
+}
+.MR_ten{
+    margin-right: 10px!important;
+}
+.MR_Four{
+    margin-right: 40px!important;
+}
+.PR_twenty{
+    padding-right: 20px!important;
+}
+.PR_ten{
+    padding-right: 10px!important;
+}
+.MR_onehundred{
+    margin-right: 100px !important; 
+}
+/* 宽50 */
+.w_Fty{
+    width: 50px;
+}
+.w_60{
+    width: 60px;
+}
+.w_80{
+    width: 80px;
+}
+/* 宽100 */
+.widthOneHundred{
+    width: 100px !important;
+}
+.w_110{
+    width: 110px;
+}
+/* 宽150 */
+.widthOneFiveHundred{
+    width: 150px !important;
+}
+/* 宽200 */
+.widthTwoHundred{
+    width: 200px !important;
+}
+.w_250{
+    width: 250px;
+}
+/* 宽350 */
+.widthThreeFiveHundred{
+    width: 350px !important;
+}
+/* 宽300 */
+.widthThreeHundred{
+    width: 300px !important;
+}
+/* 分页按钮样式及颜色 */
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+    background-color: #4677c4!important;
+    color: #fff;
+}
+/* 可以设置不同的进入和离开动画 */
+/* 设置持续时间和动画函数 */
+.slide-fade-enter-active {
+    transition: all .3s ease;
+}
+.slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+/* 无背景色按钮前新增icon大小 */
+.newAddIcon{
+    font-size: 23px !important;
+    vertical-align: -5px !important;
+    color: #4677c4 !important;
+    cursor: pointer;
+}
+
+/* 自定义确认弹框样式 */
+.confirmPopup_b{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.confirmPopup_b .confirmPopup{
+  width: 400px;
+  height: 189px;
+  margin: 375px auto;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 5px 5px 10px 10px #ccc;
+}
+.confirmPopup_b .confirm{
+    margin-top: 30px;
+    text-align: right;
+    margin-right: 10px;
+}
+.confirmPopup_b .isYes{
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: #fff;
+    color: #ccc;
+    cursor: pointer;
+}
+.confirmPopup_b .isNo{
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 10px;
+    /* background: #00C1DE;
+    color: #fff; */
+    background: #fff;
+    color: #ccc;
+    cursor: pointer;
+}
+.confirmPopup_b .confirmTitle{
+    display: inline-block;
+    width: 400px;
+    height: 50px;
+    background-color: #409EFF;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.confirmPopup_b .titleText{
+    
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    color: #fff;
+}
+.confirmPopup_b .el-icon-view{
+    color: #fff;
+}
+.confirmPopup_b .el-icon-close{
+    margin-left: 270px;
+}
+/* 字体标红 */
+.redFont{
+    color: red!important;
+}
+/* 字体标蓝 */
+.blueFont{
+    color: #4677c4!important;
+}
+/* 字体标绿 */
+.greenFont{
+    color: rgb(169, 208, 142);
+}
+/* 字体深绿 */
+.D_greenFont{
+    color:#48a02d;
+}
+/* 字体标灰 */
+.grayFont{
+    color: #a7a7a7!important;
+}
+/* 字体白色 */
+.whiteFont{
+    color: #fff;
+}
+/* 字体灰白 */
+.G_W_F{
+    color: #f8f8f8;
+}
+/* 字体灰绿 */
+.G_B_F{
+    color: #b4b7be;
+}
+/* 字体橘红 */
+.G_O_F{
+    color: #fc7410;
+}
+/* 玫红字体 */
+.G_M_F{
+    color: #fa393a;
+}
+/* i标签不带倾斜 */
+.NotStyleForI{
+    font-style:normal;
+}
+/* 蓝色背景色 */
+.blueBg{
+    background-color: #409EFF;
+}
+/* 绿色背景色 */
+.greenBg{
+    background-color: #67C23A;
+}
+/* 大YD单列表表头统一背景色 */
+.T_B{
+    background-color: #d8dce6;
+}
+/* 淡紫色背景 */
+.Lavender{
+    background-color: #f8fafb;
+}
+/* 白色背景 */
+.witeBg{
+    background-color: #fff!important;
+}
+/* 登录页小人背景颜色 */
+.L_B_G{
+    background-color: #f8f8f8;
+}
+/* 按钮颜色的背景色 */
+.B_B_G{
+    background-color: #4677c4 !important;
+}
+/* 禁止点击的灰色背景色 */
+.G_B_G{
+    background-color: #CCC !important;
+}
+/* 相对定位母位 */
+.PR{
+    position: relative;
+}
+/* 相对定位子位 */
+.PA{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/* 相对定位子位 */
+.PA_Seventeen{
+    position: absolute;
+    right: 0;
+    top: 17px;
+}
+.PA_Seventy{
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+.PA_L{
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+.PA_F{
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+.border_B{
+    border-bottom: 1px solid #e5e5e5;
+}
+.border{
+    border: 1px solid #e5e5e5;
+}
+.B_R{
+    border-radius: 10px;
+}
+.d_I_B{
+    display: inline-block;
+}
+/*宽33%   Percentage:百分比 */
+.w_33_P{
+    width: 33%;
+}
+/* 宽100% */
+.w_ratio{
+    width: 100% !important;
+}
+/* 宽10% */
+.w_t_ratio{
+    width:10%;
+}
+/* 宽90% */
+.w_n_ratio{
+    width: 90%;
+}
+/* 宽20% */
+.w_20_ratio{
+    width: 20%;
+}
+/* 高100% */
+.h_ratio{
+    height: 100%;
+}
+/* 宽高100% */
+.w_h_ratio{
+    width: 100%;
+    height: 100%;
+}
+/* 宽80% */
+.w_80_ratio{
+    width: 80%;
+}
+.w_40_ratio{
+    width: 40%
+}
+.w_60_ratio{
+    width: 60%
+}
+.w_45_ratio{
+    width: 45%;
+}
+.w_50_ratio{
+    width: 50%;
+}
+.w_5_ratio{
+    width: 5%;
+}
+.O_F_A{
+    overflow: auto;
+}
+.O_F_H{
+    overflow: hidden;
+}
+.M_O{
+    margin: auto;
+}
+/* 背景红色 */
+.B_J_R{
+    background:red !important;
+}
+/* 背景绿色 */
+.B_J_G{
+    background:#bcd4ec!important
+}
+
+::-webkit-scrollbar {
+    width: 8px;  
+    height: 8px;
+    position: absolute;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+    float: right;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+    display: none;
+    width: 0;
+}
+
+/* 设置透明度为0.1 */
+.S_O{
+    opacity: 0.1;
+}
+/* margin为0 */
+.M_Z{
+    margin: 0;
+}
+/* 50PX切圆角 */
+.B_R_F{
+    border-radius:50px;
+}
+/* 禁止点击事件 */
+.disable {
+	pointer-events: none;
+}
+.B_T_R_R{
+    border-top-right-radius: 10px;
+}
+.B_T_L_R{
+    border-top-left-radius: 10px;
+}
+.B_B_R_R{
+    border-bottom-right-radius: 10px;
+}
+.B_B_L_R{
+    border-bottom-left-radius: 10px;
+}
+
+
+
+.fixed-table-box table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    box-sizing: border-box;
+  }
+  .fixed-table-box tr,
+  .fixed-table-box td,
+  .fixed-table-box th {
+    box-sizing: border-box;
+  }
+  
+  .fixed-table-box{
+      position: relative;
+      font-size: 14px;
+      line-height: 1.42858;
+      border: 1px solid #dfe6ec;
+      border-bottom: 0;
+      border-right: 0;
+      overflow: hidden;
+  }
+  .fixed-table-box:before{
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: " ";
+      width: 100%;
+      height: 1px;
+      background-color: #dfe6ec;
+  }
+  .fixed-table-box:after{
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      content: " ";
+      width: 1px;
+      height: 100%;
+      background-color: #dfe6ec;
+  }
+  .fixed-table-box .fixed-table_header,
+  .fixed-table-box .fixed-table_body{
+      width: auto;
+  }
+  .fixed-table-box table{
+      background-color: #fff;
+      border: 0;
+  }
+  .fixed-table-box th,
+  .fixed-table-box td{
+      position: relative;
+      text-align: left;
+      padding: 5px 0;
+      border: 1px solid #dfe6ec;
+  }
+  .fixed-table-box .table-cell{
+      display: block;
+      height: 30px;
+      line-height: 30px;
+      word-break: break-all;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-left: 15px;
+  }
+  /* 表头 start */
+  .fixed-table-box>.fixed-table_header-wraper{
+      overflow: hidden;
+  }
+  .fixed-table-box .fixed-table_header.fixed-header{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+  }
+  .fixed-table-box .fixed-table_header tr{
+      background-color: #eef1f6;
+  }
+  .fixed-table-box .fixed-table_header th{
+      color: #1f2d3d;
+      border-top: 0;
+      border-left: 0;
+  }
+  /* 表头 end */
+  
+  /*表格内容 start*/
+  .fixed-table-box .fixed-table_body td{
+      border-top: 0;
+      border-left: 0;
+  }
+  .fixed-table-box .fixed-table_body tr.rowHover{
+      background-color: #eef1f6;
+  }
+  /*表格内容 end*/
+  
+  /* 行固定表格 start*/
+  .fixed-table-box.head-fixed .fixed-table_body-wraper{
+      overflow-y: auto;
+  }
+  .fixed-table-box.head-fixed .fixed-table_header,
+  .fixed-table-box.head-fixed .fixed-table_body{
+      width: 100%;
+  }
+  /* 行固定表格 end*/
+  
+  /* 列固定表格 start */
+  .fixed-table-box.col-fixed{
+      /* overflow-x: auto; */
+      border-right: 1px solid #eef1f6;
+  }
+  .fixed-table-box.col-fixed:after{
+      display: none;
+  }
+  .fixed-table-box.col-fixed .fixed-table_header-wraper{
+      /*设置它为overflow: hidden的目的是为了在拖动.fixed-table-box.col-fixed .fixed-table_body-wraper
+      的时候可以同步的拖动.fixed-table-box.col-fixed .fixed-table_header-wraper*/
+      overflow: hidden;
+  }
+  .fixed-table-box.col-fixed .fixed-table_body-wraper{
+      overflow-x: auto;
+  }
+  /* 列固定表格 end */
+  
+  /* 固定列 start */
+  .fixed-table_fixed{
+      position: absolute;
+      top: 0;
+      z-index: 5;
+      background-color: #fff;
+      overflow: hidden;
+  }
+  .fixed-table_fixed-left{
+      left: 0;
+      box-shadow: 1px -1px 8px 1px #d3d4d6;
+  }
+  .fixed-table_fixed-right{
+      right: 0;
+      /* border-left: 1px solid #dfe6ec\0; */
+      box-shadow: -2px -1px 8px 1px #d3d4d6;
+  }
+  .fixed-table_fixed .fixed-table_header-wraper,
+  .fixed-table_fixed .fixed-table_body-wraper{
+      overflow-y: hidden;
+  }
+  .fixed-table_fixed.fixed-table_fixed-right td{
+      border-right: none;
+      border-left: 1px solid #dfe6ec;
+  }
+  /* 固定列 end */
+  
+  /* 固定列和固定表头 start */
+  .fixed-table-box.row-col-fixed>.fixed-table_body-wraper{
+      overflow: auto;
+  }
+  
+  .fixed-table-box_fixed-right-patch{
+      /*右上角的遮罩，如果少了这块在右边有固定列并且表格内容右侧有滚动条时会出现镂空的效果*/
+      background-color: #eef1f6;
+      position: absolute;
+      top: 0;
+      right: 0;
+  }
+  /* 固定列和固定表头 end */
+  .fixed-table-box{
+    width: 90%;
+    margin: 5% auto;
+}
+.fixed-table_body-wraper{
+    /* height: 260px; */
+}
+.fixed-table-box>.fixed-table_body-wraper{/*内容了表格主体内容有纵向滚动条*/
+    max-height: 260px;
+}
+
+.fixed-table_fixed>.fixed-table_body-wraper{/*为了让两侧固定列能够同步表格主体内容滚动*/
+    /* max-height: 240px; */
+}
+
+.w-150{
+    width: 150px;
+}
+.w-120{
+    width: 120px;
+}
+.w-300{
+    width: 300px;
+}
+.w-100{
+    width: 100px;
+}
+.w-80{
+    width: 80px;
+}

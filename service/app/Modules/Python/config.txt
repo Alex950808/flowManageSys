@@ -1,0 +1,1 @@
+[{"host": "127.0.0.1", "user": "root", "passwd": "root", "db_name": "jms", "port": 3306}]

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache"  />
+    <meta http-equiv="content-type" content="no-cache, must-revalidate" />
+    <meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT"/>
+    <title>数据查询</title>
+    <link rel="stylesheet" href="./css/chartsData.css" type="text/css"/>
+    <link rel="stylesheet" href="./css/common.css" type="text/css"/>
+</head>
+<body>
+    <div>
+        <!-- <div class="content_b"> -->
+        <span class="BgButton all_ten" onclick="seeSomeDate('7',this)">近一周</span>
+        <span class="BgButton all_ten" onclick="seeSomeDate('30',this)">近30天</span>
+        <span class="BgButton all_ten" onclick="seeSomeDate('60',this)">近60天</span>
+        <div id="main" style="width: 100%;height:400px;"></div>
+        <!-- </div> -->
+        <div class="notData_b">
+            <div class="notData">
+                <div class="tishi">加载提示</div>
+                <div class="promptCon"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/echarts.min.js" type="text/javascript" charset="UTF-8"></script>
+<script src="./js/jquery-1.11.3.min.js" type="text/javascript" charset="UTF-8"></script>
+<script language=javascript src='./js/common.js' charset="utf-8"></script>
+<script src="./js/chartsData.js" type="text/javascript" charset="utf-8"></script>
+</html>

@@ -1,0 +1,53 @@
+.file {
+    position: relative;
+    /* display: inline-block; */
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    text-decoration: none;
+    text-indent: 0;
+    /* line-height: 50px; */
+    text-align: center;
+}
+.file img{
+  padding-top: 20px;
+}
+.file span{
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 68px;
+  width: 120px;
+  height: 27px;
+  font-size: 10px;
+  /* line-height: 27px;
+  line-height: 50px; */
+  /* vertical-align: 19px; */
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+table{
+    border: 1px solid #ebeef5;
+    
+}
+table tr{
+    line-height: 40px;
+    
+}
+table th,td{
+    border-bottom: 1px solid #ebeef5;
+    border-left: 1px solid #ebeef5;
+}
+table tr:nth-child(even){
+    background:#fafafa;
+}
+table tr:hover{
+    background:#ced7e6;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache"  />
+    <meta http-equiv="content-type" content="no-cache, must-revalidate" />
+    <meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT"/>
+    <title>业务报价系统</title>
+    <link rel="stylesheet" href="./css/searchMerchandise.css" type="text/css"/>
+    <link rel="stylesheet" href="./css/common.css" type="text/css"/>
+</head>
+<body>
+    <div class="searchMerchandise bg">
+        <div class="title">
+            <div class="title_box"><span class="D_I_B w_50">汇率</span><input onchange="ifLessThanZero()" type="number" class="Inp rmber"></div>
+            <div class="title_box"><span class="D_I_B w_50">运费</span><input type="number" placeholder="默认3美金" class="Inp freightEr"></div>
+            <div class="title_box"><span class="D_I_B w_50">毛利</span><input type="number" class="Inp grossProfit"></div>
+            <div class="title_box">
+                <span class="D_I_B w_50">运输方式</span>
+                <span style="font-size: 16px;">
+                    &nbsp;&nbsp;<input name="Fruit" type="radio" value="0" />无
+                    &nbsp;&nbsp;<input name="Fruit" type="radio" value="1" />空运
+                    &nbsp;&nbsp;<input name="Fruit" type="radio" value="2" />海运
+                </span>
+            </div>
+            <div class="title_box">
+                <span class="D_I_B w_50" style="vertical-align: -9px;">预计到<br/>港时间</span><input type="date" name="user_date" class="Inp"/>
+            </div>
+            <div class="title_box"><span class="D_I_B w_50">商品</span><input class="Inp goods"></div>
+            <div class="T_A_C M_T_10 search"><span onclick="search()" class="D_I_B search">查询报价</span></div>
+        </div>
+        <div class="content_b">
+        </div>
+
+
+
+
+
+
+        <div class="notData_b">
+            <div class="notData">
+                <div class="tishi">加载提示</div>
+                <div class="promptCon">正在加载中!!!</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-1.11.3.min.js" type="text/javascript" charset="UTF-8"></script>
+<script src="./js/echarts.min.js" type="text/javascript" charset="UTF-8"></script>
+<script language=javascript src='./js/common.js' charset="utf-8"></script>
+<script src="./js/searchMerchandise.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    // $(function(){
+        if(localStorage.getItem("versionNum")==null){
+            localStorage.setItem("versionNum",'v0.01');
+        }else if(localStorage.getItem("versionNum")!='v0.01'){
+            // console.log(2)
+            // var metaOne='<meta http-equiv="Pragma" content="no-cache">';
+            // $("head").prepend(metaOne);
+            // var metaTwo='<meta http-equiv="Cache-Control" content="no-cache">';
+            // $("head").prepend(metaTwo);
+            // var metaThree='<meta http-equiv="Expires" content="0">';
+            // $("head").prepend(metaThree);
+            window.location.reload(true);
+        }else{
+            localStorage.setItem("versionNum",'v0.01');
+        }
+    // })
+</script>
+</html>
